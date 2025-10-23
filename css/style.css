@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+    --primary-color: #333333;
+    --primary-light: #fff4e6; 
+    --muted-gray: #333333;
+    --accent-red: #ff0000; 
+    --heading-font: "Playfair Display", serif;
+    --body-font: "Montserrat", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary-light);
+    font-family: var(--body-font);
+    color: var(--primary-color);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(3, auto);
+    width: 100%;
+
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 2.6rem;
+    padding: 1rem 0;
+}
+
+.heart {
+    display: inline-block;
+    margin: 0.5rem auto;
+}
+
+.heart li {
+    display: inline-block;
+    color: var(--accent-red);
+}
+
+.image-container {
+    width: 100%;
+    height: auto;
+
+}
+
+.image-container img {
+  height: 200px;  
+  object-fit: cover;
+  object-position: 100% 30%;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+}
+
+.name {
+    font-size: 1rem;
+}
+
+.phone-number {
+    font-size: 1rem;
+}
+
+.email {
+    font-size: 1rem;
+}
+
+.social-media {
+    font-size: 1rem;
+}
+
+.info {
+    margin: 1rem -8rem;
+    padding-top: 100px;
+}
+
+.main-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, auto);
+}
+
+h2 {
+    font-family: var(--heading-font);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.education {
+    padding: 1rem 0;
+}
+
+.work-experience {
+    padding: 1rem 0;
+}
+
+.extra-info {
+    padding: 1rem 0;
+}
+
+.school ul {
+    margin: 1rem auto;
+}
+
+.work ul {
+    margin: 1rem auto;
+}
+
+.extra ul {
+    margin: 1rem auto;
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        padding: 16px;
+    }
+
+    .name {
+        padding-left: 5rem;
+    }
+
+    .phone-number {
+        padding-left: 5rem;
+    }
+
+    .email {
+        padding-left: 5rem;
+    }
+
+    .social-media {
+        padding-left: 5rem;
+    }
+}
